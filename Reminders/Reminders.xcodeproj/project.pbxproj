@@ -75,6 +75,7 @@
 		685873B528AEAFE000D178E0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				685873BD28AEB0AD00D178E0 /* Notifications */,
 				685873BC28AEB06200D178E0 /* Main */,
 				685873BB28AEB05100D178E0 /* Items */,
 			);
@@ -84,6 +85,7 @@
 		685873B628AEAFE400D178E0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				685873BE28AEB0B300D178E0 /* Notifications */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -116,6 +118,20 @@
 				685873A928AEA5D200D178E0 /* ContentView.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		685873BD28AEB0AD00D178E0 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		685873BE28AEB0B300D178E0 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
