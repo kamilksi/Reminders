@@ -12,6 +12,7 @@
 		685873AC28AEA5D300D178E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685873AB28AEA5D300D178E0 /* Assets.xcassets */; };
 		685873AF28AEA5D300D178E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 685873AE28AEA5D300D178E0 /* Preview Assets.xcassets */; };
 		685873BA28AEB03A00D178E0 /* RemindersCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 685873B928AEB03A00D178E0 /* RemindersCellView.swift */; };
+		6880719D28B15A490012359C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6880719C28B15A490012359C /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		685873AB28AEA5D300D178E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		685873AE28AEA5D300D178E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		685873B928AEB03A00D178E0 /* RemindersCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersCellView.swift; sourceTree = "<group>"; };
+		6880719C28B15A490012359C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +57,9 @@
 			children = (
 				685873B828AEB00200D178E0 /* Utils */,
 				685873B728AEAFF800D178E0 /* Model */,
-				685873B628AEAFE400D178E0 /* ViewModel */,
 				685873B528AEAFE000D178E0 /* View */,
+				685873B628AEAFE400D178E0 /* ViewModel */,
+				6880719E28B15A5E0012359C /* Data */,
 				685873A728AEA5D200D178E0 /* RemindersApp.swift */,
 				685873AB28AEA5D300D178E0 /* Assets.xcassets */,
 				685873AD28AEA5D300D178E0 /* Preview Content */,
@@ -116,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				685873A928AEA5D200D178E0 /* ContentView.swift */,
+				6880719C28B15A490012359C /* MainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -132,6 +136,13 @@
 			children = (
 			);
 			path = Notifications;
+			sourceTree = "<group>";
+		};
+		6880719E28B15A5E0012359C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				685873AA28AEA5D200D178E0 /* ContentView.swift in Sources */,
+				6880719D28B15A490012359C /* MainView.swift in Sources */,
 				685873BA28AEB03A00D178E0 /* RemindersCellView.swift in Sources */,
 				685873A828AEA5D200D178E0 /* RemindersApp.swift in Sources */,
 			);
