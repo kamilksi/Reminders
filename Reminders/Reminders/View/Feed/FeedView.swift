@@ -9,8 +9,8 @@ import SwiftUI
 
 struct FeedView: View {
     var body: some View {
-            List{
-                Section(header: Text("My lists").font(.title3).fontWeight(.black).foregroundColor(.black)){
+        List{
+            Section(header: Text("My lists").font(.title3).fontWeight(.black).foregroundColor(.black)){
                 ForEach(0 ..< 5) { item in
                     NavigationLink {
                         RemindersCellView()
