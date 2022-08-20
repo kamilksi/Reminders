@@ -10,9 +10,12 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         NavigationView{
-            //Search
-            //Buttons
+                //Search
+
                 FeedView()
+                TagsView()
+        
+            //Buttons
             // TAGS
         }
     }
