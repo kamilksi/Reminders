@@ -11,10 +11,10 @@ struct MainView: View {
     var body: some View {
         NavigationView{
                 //Search
-            Form {
+
                 FeedView()
                 TagsView()
-            }
+        
             //Buttons
             // TAGS
         }

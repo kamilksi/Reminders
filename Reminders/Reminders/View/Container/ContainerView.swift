@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContainerView: View {
+    var items: [GridItem] = [GridItem(), GridItem()]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        LazyVGrid(columns: items, content: {
+            ForEach(0 ..< 5) { _ in
+                ContainerCellView()
+            }
+        })
     }
 }
 
