@@ -22,11 +22,7 @@ struct RemindersCellView: View {
             Spacer()
             Text("\(count)")
                 .foregroundColor(.secondary)
-        }
-        .padding()
-        .background(Color(.init(white: 0.5, alpha: 0.30)))
-        .clipShape(Capsule())
-        .foregroundColor(.primary)
+        }.padding()
     }
 }
 
