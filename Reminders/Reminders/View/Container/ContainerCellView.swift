@@ -26,9 +26,9 @@ struct ContainerCellView: View {
                 Spacer()
             }
         }
-        .frame(width: 150, height: 75, alignment: .leading)
+        .frame(width: 120, height: 60, alignment: .leading)
         .padding()
-        .background(.white)
+        .background(Color(.init(gray: 0.5, alpha: 0.2)))
         .cornerRadius(12)
     }
 }

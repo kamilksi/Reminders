@@ -8,18 +8,44 @@
 import SwiftUI
 
 struct MainView: View {
+    @State var text: String = ""
     var body: some View {
         NavigationView{
-                //Search
+            //Search
             VStack {
-                ContainerView()
                 Form{
+                    ContainerView()
                     FeedView()
                     TagsView()
+
+                }
+                HStack{
+                    Button(action: {}, label: {
+                        HStack{
+                            Image(systemName: "plus.circle.fill")
+                                .font(.title2)
+                            Text("New Reminder")
+                                .fontWeight(.black)
+                        }.padding(.leading, 20)
+                    })
+                    Spacer()
+                    Button(action: {}, label: {
+                        Text("Add list")
+                            .fontWeight(.black)
+                    }).padding(.trailing, 20)
                 }
             }
-            .background(Color("backgroundColor"))
+            .navigationTitle("Reminders")
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing:
+                                    Button(action: {}, label: {
+                Text("Edit")
+            })
+            )
+            .searchable(text: $text)
         }
+
+
     }
 }
 
