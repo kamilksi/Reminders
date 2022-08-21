@@ -11,10 +11,14 @@ struct MainView: View {
     var body: some View {
         NavigationView{
                 //Search
-            Form{
-                FeedView()
-                TagsView()
+            VStack {
+                ContainerView()
+                Form{
+                    FeedView()
+                    TagsView()
+                }
             }
+            .background(Color("backgroundColor"))
         }
     }
 }
