@@ -12,14 +12,39 @@ struct MainView: View {
     var body: some View {
         NavigationView{
             //Search
-            Form{
-                ContainerView()
-                FeedView()
-                TagsView()
+            VStack {
+                Form{
+                    ContainerView()
+                    FeedView()
+                    TagsView()
+
+                }
+                HStack{
+                    Button(action: {}, label: {
+                        HStack{
+                            Image(systemName: "plus.circle.fill")
+                                .font(.title2)
+                            Text("New Reminder")
+                                .fontWeight(.black)
+                        }.padding(.leading, 20)
+                    })
+                    Spacer()
+                    Button(action: {}, label: {
+                        Text("Add list")
+                            .fontWeight(.black)
+                    }).padding(.trailing, 20)
+                }
             }
             .navigationTitle("Reminders")
             .navigationBarTitleDisplayMode(.inline)
-        }.searchable(text: $text)
+            .navigationBarItems(trailing:
+                                    Button(action: {}, label: {
+                Text("Edit")
+            })
+            )
+            .searchable(text: $text)
+        }
+
 
     }
 }

@@ -123,9 +123,6 @@
 		685873BB28AEB05100D178E0 /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				685873B928AEB03A00D178E0 /* RemindersCellView.swift */,
-				68A28C6E28B16D99006095B4 /* TagsCellView.swift */,
-				68A28C7328B1820D006095B4 /* ContainerCellView.swift */,
 			);
 			path = Items;
 			sourceTree = "<group>";
@@ -164,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				688071A028B15DBB0012359C /* FeedView.swift */,
+				685873B928AEB03A00D178E0 /* RemindersCellView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -171,6 +169,7 @@
 		68A28C6B28B16D7C006095B4 /* Tags */ = {
 			isa = PBXGroup;
 			children = (
+				68A28C6E28B16D99006095B4 /* TagsCellView.swift */,
 				68A28C6C28B16D8B006095B4 /* TagsView.swift */,
 			);
 			path = Tags;
@@ -179,6 +178,7 @@
 		68A28C7028B181F2006095B4 /* Container */ = {
 			isa = PBXGroup;
 			children = (
+				68A28C7328B1820D006095B4 /* ContainerCellView.swift */,
 				68A28C7128B18204006095B4 /* ContainerView.swift */,
 			);
 			path = Container;
