@@ -8,18 +8,19 @@
 import SwiftUI
 
 struct MainView: View {
+    @State var text: String = ""
     var body: some View {
         NavigationView{
-                //Search
-            VStack {
+            //Search
+            Form{
                 ContainerView()
-                Form{
-                    FeedView()
-                    TagsView()
-                }
+                FeedView()
+                TagsView()
             }
-            .background(Color("backgroundColor"))
-        }
+            .navigationTitle("Reminders")
+            .navigationBarTitleDisplayMode(.inline)
+        }.searchable(text: $text)
+
     }
 }
 
