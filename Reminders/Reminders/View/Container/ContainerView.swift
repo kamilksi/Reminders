@@ -10,8 +10,8 @@ import SwiftUI
 struct ContainerView: View {
     var items: [GridItem] = [GridItem(), GridItem()]
     var body: some View {
-        LazyVGrid(columns: items, content: {
-            ForEach(0 ..< 5) { _ in
+        LazyVGrid(columns: items,spacing: 20, content: {
+            ForEach(0 ..< 4) { _ in
                 ContainerCellView()
             }
         })
@@ -21,5 +21,7 @@ struct ContainerView: View {
 struct ContainerView_Previews: PreviewProvider {
     static var previews: some View {
         ContainerView()
+            .background(Color("backgroundColor"))
+
     }
 }
